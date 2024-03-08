@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTML Email</title>
+    <style>
+        /* Reset styles */
+        body, table, td, th, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Set max-width to ensure email content fits within viewport */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="container" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <!-- Header -->
+                <table cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f0f0; width: 100%;">
+                    <tr>
+                        <td>
+                            <h1 style="text-align: center; padding: 20px;">Welcome to Our Newsletter</h1>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Content -->
+                <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+                    <tr>
+                        <td>
+                            <p style="padding: 20px;">Dear Subscriber,</p>
+                            <p style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed mauris nec nisl condimentum pulvinar. Nullam lobortis semper magna, eget volutpat est bibendum eget. Nam nec dapibus est.</p>
+                            <p style="padding: 20px;">Sincerely,<br>Company Name</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Footer -->
+                <table cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f0f0; width: 100%;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; padding: 20px;">Copyright &copy; 2024 Company Name. All rights reserved.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
 
